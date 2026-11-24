@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raahat — Fair, visible, accountable civic complaints</title>
+<meta name="description" content="Raahat is a research-based citizen complaint platform that combines formal ticketing with a public feed.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<div class="flag"></div>
+<div class="wrap">
+<nav><div class="logo">Raahat</div><div><a href="#problem">Problem</a><a href="#how">How it works</a><a href="#features">Features</a><a href="#stack">Stack</a></div></nav>
+
+<header class="hero">
+<span class="pill">Prototype · Demo build</span>
+<h1>Be heard because you’re <span>right</span>, not because you’re <span>viral</span>.</h1>
+<p class="lead">Raahat is a citizen complaint platform that combines the accountability of a formal ticketing system with the visibility of a public feed, so a complaint is resolved on need, not on follower count.</p>
+<div class="btns"><a class="btn" href="#how">See how it works</a><a class="btn alt" href="#problem">Why it exists</a><a class="btn alt" href="/research-paper.pdf" target="_blank" rel="noopener">View research paper</a></div>
+</header>
+
+<section id="problem">
+<h2>The problem we started from</h2>
+<p class="sub">Raahat grows out of the research paper <em>“Equity or Virality? A Comparative Analysis of Formal Ticketing Systems and Social Media Platforms (Twitter/X) for Citizen Complaint Resolution in E-Governance”</em> (mixed methods, survey of 44 respondents plus CPGRAMS and literature data). The paper is an unpublished study, shared here for reference. <a href="/research-paper.pdf" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600">View research paper (PDF)</a></p>
+<div class="grid">
+<div class="card"><div class="stat">56.8%</div><p>believe viral complaints are more likely to get resolved, the strongest perception in the whole survey.</p></div>
+<div class="card"><div class="stat">72.7%</div><p>have never filed on a formal portal, even though 100% use the internet daily. Awareness, not access, is the barrier.</p></div>
+<div class="card"><div class="stat">50%</div><p>of portal users waited more than a week for a response, and 16.7% never heard back.</p></div>
+<div class="card"><div class="stat">13.6%</div><p>say neither channel works, a trust deficit that points to a hybrid model.</p></div>
+</div>
+<div class="vs" style="margin-top:20px">
+<div class="card"><h3>Formal ticketing (e.g. CPGRAMS)</h3><ul><li>Equitable, trackable, accountable</li><li>Slow, low awareness, hard to file</li><li>Each complaint handled separately, with no grouping by locality</li></ul></div>
+<div class="card"><h3>Social media (Twitter/X)</h3><ul><li>Fast, easy, public pressure</li><li>Rewards influence and virality</li><li>No guarantee of real resolution</li></ul></div>
+</div>
+<p class="sub" style="margin-top:20px">The paper’s conclusion: neither channel alone is satisfactory. Raahat is an attempt at the integrated, hybrid system it recommends.</p>
+</section>
+
+<section id="how">
+<h2>How Raahat works</h2>
+<p class="sub">One platform where filing, visibility and accountability live together.</p>
+<div class="grid">
+<div class="card"><h3>1 · File a complaint</h3><p>A structured ticket goes to the right authority, so the formal trail is never lost.</p></div>
+<div class="card"><h3>2 · Share it publicly</h3><p>Post about it in a social-style feed with the relevant authorities tagged for visibility.</p></div>
+<div class="card"><h3>3 · Neighbours join in</h3><p>Citizens filing a similar issue see matching posts and can back the existing one. The original complainant’s name stays private.</p></div>
+<div class="card"><h3>4 · Officials respond in public</h3><p>Authorities post work-completed or delay updates in the feed, so progress is visible to everyone.</p></div>
+</div>
+</section>
+
+<section id="features">
+<h2>Core features</h2>
+<div class="grid">
+<div class="card"><h3>Public feed with official updates</h3><p>A Twitter-like feed where officials post completion or delay notices against each complaint.</p></div>
+<div class="card"><h3>Upvote the cause</h3><p>Residents who see the problem daily can upvote to show support without filing their own complaint.</p></div>
+<div class="card"><h3>Locality clustering</h3><p>Multiple complaints about the same local issue are grouped and handled together, fixing a gap found in CPGRAMS. Severity is weighed alongside clustering.</p></div>
+<div class="card"><h3>Duplicate prevention</h3><p>New filers are shown matching posts and asked whether it’s the same complaint before a duplicate is created.</p></div>
+</div>
+<h3 style="margin:28px 0 6px">Transparent ticket status</h3>
+<p class="sub" style="margin-bottom:8px">Detailed, visible statuses, ending not with an officer closing the ticket but with the citizen confirming the fix or reopening it.</p>
+<div class="steps">
+<div class="step">Submitted</div><div class="step">Acknowledged</div><div class="step">In progress</div><div class="step">Marked resolved</div><div class="step">Citizen confirms or reopens</div>
+</div>
+</section>
+
+<section id="scope">
+<h2>Prototype scope</h2>
+<p class="sub">This demo shows the concept and the flow. Some things are deliberately out for now.</p>
+<div class="grid">
+<div class="card"><h3>In this prototype</h3><p>Filing, public feed, upvotes, status flow, and clustering demonstrated on a sample dataset.</p></div>
+<div class="card"><h3>Future scope</h3><p>Aadhaar-linked accounts (to prevent duplicate logins), live real-time clustering, and automatic address resolution once authorities are onboarded.</p></div>
+<div class="card"><h3>Left out for now</h3><p>Downvotes, public comments, and naming individual officers in posts.</p></div>
+</div>
+</section>
+
+<section id="stack">
+<h2>Tech stack</h2>
+<p class="sub">Starting simple. The final stack will be decided later.</p>
+<div class="tags"><span>Vite</span><span>Supabase</span></div>
+<div class="note" style="margin-top:14px">This page is a static project homepage. The working app will connect to Supabase for data and authentication.</div>
+</section>
+
+<footer>Raahat is a research-based prototype by Swarangi Mohare, MCA, DES’s NMITD, Mumbai. It is based on the paper “Equity or Virality?”.</footer>
+</div>
+
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
