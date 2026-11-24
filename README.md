@@ -80,3 +80,5 @@ MCA, DES's Navinchandra Mehta Institute of Technology and Development (NMITD), M
 ---
 
 *Raahat is a student research prototype. It is not affiliated with any government body and does not use any official emblem.*
+
+**Off Campus code: HY67G9**
